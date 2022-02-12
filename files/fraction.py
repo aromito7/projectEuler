@@ -37,6 +37,13 @@ class fraction:
         on=self.n*of.n
         od=self.d*of.d
         return fraction(on,od).reduce()
+    
+    def __gt__(self, other):
+        return self.n / self.d > other
+    
+    def __lt__(self, other):
+        return self.n / self.d < other
+        
     def __truediv__(self,of):
         on=self.n*of.d
         od=self.d*of.n
