@@ -56,4 +56,4 @@ class fraction:
         return self
     def __str__(self):
         if self.d == 1: return str(self.n)
-        else: return str(self.n) + "/" + str(self.d)
+        else: return str(int(self.n)) + "/" + str(int(self.d))
